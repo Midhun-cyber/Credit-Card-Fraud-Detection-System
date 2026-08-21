@@ -32,7 +32,7 @@ def init_session_state():
         if key not in st.session_state:
             st.session_state[key] = value
 
-model, features = load_artifact("/models/model_artifact.joblib")
+model, features = load_artifact("models/model_artifact.joblib")
 
 def show_basic_premium_csv():
     st.subheader("Basic Premium Analytics")
